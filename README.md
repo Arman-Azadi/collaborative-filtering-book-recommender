@@ -18,6 +18,7 @@ The project explores two primary approaches:
 
 ### 2. Prediction Strategy
 The predicted rating $\hat{r}_{u,i}$ is calculated as the weighted average of ratings from the top-k similar neighbors:
+
 $$
 \hat{r}_{u,i} = \frac{\sum_{v \in N} sim(u,v) \cdot r_{v,i}}{\sum_{v \in N} |sim(u,v)|}
 $$
